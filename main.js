@@ -202,3 +202,57 @@ document.addEventListener('DOMContentLoaded', () => {
         range.addEventListener('change', (e) => updateSlider(e.target.value));
     });
 });
+
+
+// --- Global Gallery Lightbox Physics ---
+document.addEventListener('DOMContentLoaded', () => {
+    const lightbox = document.getElementById('gallery-lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const triggers = document.querySelectorAll('.lightbox-trigger');
+
+    if (lightbox && triggers.length > 0) {
+        // Open Lightbox
+        triggers.forEach(trigger => {
+            trigger.addEventListener('click', (e) => {
+                // Ascend to the parent container and find the target image source
+                const parentBox = trigger.closest('.relative.overflow-hidden');
+                if (parentBox) {
+                    const imgNode = parentBox.querySelector('img');
+                    if (imgNode) {
+                        const targetSrc = imgNode.getAttribute('src');
+                        lightboxImage.setAttribute('src', targetSrc);
+                        
+                        // Fade in logic natively executing scale animation
+                        lightbox.classList.remove('opacity-0', 'pointer-events-none');
+                        setTimeout(() => {
+                            lightboxImage.classList.remove('scale-95');
+                            lightboxImage.classList.add('scale-100');
+                        }, 50);
+                    }
+                }
+            });
+        });
+
+        // Close logic sequence securely encapsulating transitions
+        const closeLightbox = () => {
+            lightboxImage.classList.remove('scale-100');
+            lightboxImage.classList.add('scale-95');
+            setTimeout(() => {
+                lightbox.classList.add('opacity-0', 'pointer-events-none');
+            }, 50);
+        };
+
+        if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+        
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !lightbox.classList.contains('pointer-events-none')) {
+                closeLightbox();
+            }
+        });
+    }
+});
