@@ -17,9 +17,8 @@ app.use(compression());
 const distPath = join(__dirname, 'dist');
 const servePath = fs.existsSync(distPath) ? distPath : __dirname;
 
-// Serve statically with explicit aggressive caching for images and scripts
+// Serve statically with explicit caching disabled to ensure immediate deployment propagation on CDNs
 app.use(express.static(servePath, {
-    maxAge: '1d', // Cache in browser for 1 day aggressively
     etag: true
 }));
 
