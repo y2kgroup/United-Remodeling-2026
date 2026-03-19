@@ -179,10 +179,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (closePrivacyBtn) closePrivacyBtn.addEventListener('click', closePrivacy);
         if (acceptPrivacyBtn) acceptPrivacyBtn.addEventListener('click', closePrivacy);
-        
         privacyModal.addEventListener('click', (e) => {
             if (e.target === privacyModal) closePrivacy();
         });
     }
 
+});
+
+// --- Interactive Before/After Sliders ---
+document.addEventListener('DOMContentLoaded', () => {
+    const sliders = document.querySelectorAll('.comparison-slider');
+    sliders.forEach(slider => {
+        const range = slider.querySelector('.comparison-range');
+        const beforeImg = slider.querySelector('.before-img');
+        const line = slider.querySelector('.slider-line');
+        const updateSlider = (val) => {
+            beforeImg.style.clipPath = `polygon(0 0, ${val}% 0, ${val}% 100%, 0 100%)`;
+            line.style.left = `${val}%`;
+        };
+        range.addEventListener('input', (e) => updateSlider(e.target.value));
+        // Also support tapping on mobile
+        range.addEventListener('change', (e) => updateSlider(e.target.value));
+    });
 });
