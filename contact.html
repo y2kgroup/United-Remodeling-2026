@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | United Remodeling CA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link rel="stylesheet" href="/style.css"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#82c91e",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102215",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col">
+
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 md:px-20 py-4 bg-white dark:bg-background-dark sticky top-0 z-50">
+<div class="flex items-center py-2 text-slate-900 dark:text-slate-100 min-w-max">
+<a href="/" class="flex items-center">
+    <img src="/uploads/United%20Remodeling%20Logo.svg" alt="United Remodeling CA Logo" class="h-[80px] w-auto drop-shadow-sm" />
+</a>
+</div>
+
+<!-- Centered Menu Text -->
+<div class="hidden lg:flex flex-1 justify-center px-4">
+<nav class="flex items-center gap-6 xl:gap-8">
+<a class="nav-link text-base font-serif font-medium transition-colors hover:text-[#f68712]" href="/">Home</a>
+<div class="relative group">
+    <a class="nav-link text-base font-serif font-medium transition-colors hover:text-[#f68712] flex items-center gap-1 cursor-pointer" href="/services.html">
+        Services <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:rotate-180">expand_more</span>
+    </a>
+    <div class="absolute top-full left-0 pt-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 z-[100]">
+        <div class="bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-slate-100 dark:border-slate-700 overflow-hidden w-64 flex flex-col py-2">
+            <a href="/landscape-design.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Landscape Design</a>
+            <a href="/concrete-patios.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Concrete Patios</a>
+            <a href="/custom-driveways.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Custom Driveways</a>
+            <a href="/retaining-walls.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Retaining Walls</a>
+            <a href="/turf-installation.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Turf Installation</a>
+            <a href="/hardscaping-stones.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Hardscaping & Stones</a>
+            <a href="/wooden-pergolas.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Pergola</a>
+            <a href="/stone-pathways.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Stone Pathways</a>
+            <a href="/landscape-flowers.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Landscape Flowers</a>
+            <a href="/landscape-lighting.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Landscape Lighting</a>
+        </div>
+    </div>
+</div>
+<a class="nav-link text-base font-serif font-medium transition-colors hover:text-[#f68712]" href="/about.html">About</a>
+<a class="nav-link text-base font-serif font-medium transition-colors text-primary" href="/contact.html">Contact</a>
+</nav>
+</div>
+
+<!-- Social Media, License, Quote Button -->
+<div class="hidden lg:flex items-center justify-end gap-4 xl:gap-6 min-w-max">
+    <div class="flex items-center gap-2 pr-4 xl:pr-6 border-r border-slate-200 dark:border-slate-700">
+        <a class="size-10 shrink-0 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="https://www.facebook.com/people/Unitedremodelingca/61572554786322/" target="_blank">
+            <i class="fa-brands fa-facebook-f text-lg"></i>
+        </a>
+        <a class="size-10 shrink-0 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="https://www.instagram.com/unitedremodelingca/?hl=en" target="_blank">
+            <i class="fa-brands fa-instagram text-lg"></i>
+        </a>
+        <a class="size-10 shrink-0 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="https://www.yelp.com/biz/united-remodeling-oxnard" target="_blank">
+            <i class="fa-brands fa-yelp text-lg"></i>
+        </a>
+        <a class="size-10 shrink-0 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="https://g.page/r/CWfUcyxh-4PKEAE/review" target="_blank">
+            <i class="fa-brands fa-google text-lg"></i>
+        </a>
+        <a class="size-10 shrink-0 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary transition-all group" href="https://www.bbb.org/us/ca/oxnard/profile/siding-contractors/united-remodeling-ca-inc-1236-92109750" target="_blank" rel="nofollow" title="United Remodeling CA, Inc. BBB Business Review">
+            <div class="h-6 w-10 scale-[1.3] bg-primary group-hover:bg-white transition-colors" style="mask: url('/uploads/BBB%20Logo.png') no-repeat center / contain; -webkit-mask: url('/uploads/BBB%20Logo.png') no-repeat center / contain;"></div>
+        </a>
+    </div>
+    
+    <div class="text-right flex flex-col justify-center hidden xl:flex pr-2">
+        <p class="text-[10px] text-slate-500 dark:text-slate-400 font-bold uppercase tracking-widest mb-0.5 leading-none">License #</p>
+        <p class="text-[15px] font-black text-slate-900 dark:text-white leading-none">1149479</p>
+    </div>
+
+    <button class="open-quote-modal flex min-w-[120px] cursor-pointer items-center justify-center rounded-full h-10 px-6 bg-[#f68712] text-white text-sm font-bold tracking-wide hover:shadow-[0_0_15px_rgba(246,135,18,0.5)] hover:-translate-y-0.5 transition-all">
+        Get a Quote
+    </button>
+</div>
+<div class="lg:hidden text-slate-900 dark:text-slate-100">
+<span class="material-symbols-outlined text-3xl cursor-pointer" id="mobile-menu-open">menu</span>
+</div>
+</header>
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 bg-white dark:bg-background-dark z-[100] flex flex-col hidden lg:hidden">
+    <div class="flex items-center justify-between px-6 py-4 border-b border-primary/10">
+        <div class="flex items-center text-slate-900 dark:text-slate-100">
+            <a href="/" class="flex items-center">
+                <img src="/uploads/United%20Remodeling%20Logo.svg" alt="United Remodeling CA Logo" class="h-12 w-auto" />
+            </a>
+        </div>
+        <span class="material-symbols-outlined text-3xl cursor-pointer text-slate-900 dark:text-slate-100" id="mobile-menu-close">close</span>
+    </div>
+    <div class="flex flex-col p-6 gap-6">
+        <nav class="flex flex-col gap-4">
+            <a class="nav-link text-lg font-serif font-medium hover:text-[#f68712] transition-colors text-slate-900 dark:text-slate-100" href="/">Home</a>
+            <div class="flex flex-col gap-2">
+    <a class="nav-link text-lg font-serif font-medium hover:text-[#f68712] transition-colors text-slate-900 dark:text-slate-100 flex items-center justify-between" href="/services.html">
+        Services
+        <span class="material-symbols-outlined text-lg">chevron_right</span>
+    </a>
+    <div class="flex flex-col pl-4 gap-3 border-l-2 border-slate-100 dark:border-slate-800 mt-1 mb-2">
+        <a href="/landscape-design.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Landscape Design</a>
+        <a href="/concrete-patios.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Concrete Patios</a>
+        <a href="/custom-driveways.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Custom Driveways</a>
+        <a href="/retaining-walls.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Retaining Walls</a>
+        <a href="/turf-installation.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Turf Installation</a>
+        <a href="/hardscaping-stones.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Hardscaping & Stones</a>
+        <a href="/wooden-pergolas.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Pergola</a>
+        <a href="/stone-pathways.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Stone Pathways</a>
+        <a href="/landscape-flowers.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Landscape Flowers</a>
+        <a href="/landscape-lighting.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Landscape Lighting</a>
+    </div>
+</div>
+            <a class="nav-link text-lg font-serif font-medium hover:text-[#f68712] transition-colors text-slate-900 dark:text-slate-100" href="/about.html">About</a>
+            <a class="nav-link text-lg font-serif font-medium transition-colors text-primary" href="/contact.html">Contact</a>
+        </nav>
+        <button class="open-quote-modal mt-4 w-full flex cursor-pointer items-center justify-center rounded-full h-12 px-5 bg-[#f68712] text-white text-base font-bold tracking-wide hover:shadow-[0_0_15px_rgba(246,135,18,0.5)] hover:-translate-y-0.5 transition-all">
+            Get a Quote
+        </button>
+    </div>
+</div>
+
+<!-- Main Content -->
+<main class="flex-1 w-full flex flex-col pt-[113px] bg-[#f4ebd9]/10 dark:bg-slate-900">
+    <!-- Hero Block -->
+    <section class="relative w-full h-[35vh] min-h-[300px] flex items-center justify-center bg-slate-900 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-900 to-slate-800 z-10"></div>
+        <div class="absolute right-[10%] top-[-20%] w-[60%] h-[150%] bg-primary/10 blur-[100px] rounded-full z-[1]"></div>
+        <div class="absolute left-[-10%] bottom-[-20%] w-[40%] h-[150%] bg-[#f68712]/10 blur-[100px] rounded-full z-[1]"></div>
+        
+        <div class="relative z-20 w-full max-w-5xl mx-auto px-6 text-center">
+            <span class="text-[#f68712] font-bold tracking-widest uppercase text-sm mb-4 block">Get In Touch</span>
+            <h1 class="text-5xl md:text-6xl font-black text-white tracking-tight font-serif drop-shadow-lg leading-tight mb-4">
+                Contact <span class="text-transparent bg-clip-text bg-gradient-to-br from-orange-400 via-[#f68712] to-yellow-300">Us</span>
+            </h1>
+        </div>
+    </section>
+
+    <!-- Content Split Layout -->
+    <section class="w-full py-20 px-6 max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-16 items-start">
+        
+        <!-- Left: Contact Information -->
+        <div class="space-y-12">
+            <div>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-slate-900 dark:text-white mb-6 leading-tight">We're Here to <span class="text-primary">Help</span> Complete Your Vision</h2>
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-lg font-light">Whether you have a critical question about an upcoming hardscape, need a full design consultation, or are ready to transform your outdoor space completely—our expert team is ready to respond.</p>
+            </div>
+            
+            <div class="space-y-8 pb-10 border-b border-primary/10">
+                <div class="flex items-start gap-4">
+                    <div class="size-14 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 flex items-center justify-center text-[#f68712] shrink-0 transform transition-colors duration-300 hover:text-primary cursor-default group">
+                        <span class="material-symbols-outlined text-3xl transform transition-transform group-hover:-translate-y-1">location_on</span>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Our Location</h4>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed font-light">300 E Esplanade Dr # 912<br>Oxnard, CA 93036-1238</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="size-14 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 flex items-center justify-center text-[#f68712] shrink-0 transform transition-colors duration-300 hover:text-primary cursor-default group">
+                        <span class="material-symbols-outlined text-3xl transform transition-transform group-hover:-translate-y-1">phone</span>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Call Us</h4>
+                        <p class="text-slate-600 dark:text-slate-400 font-light">805-232-5817</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="size-14 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 flex items-center justify-center text-[#f68712] shrink-0 transform transition-colors duration-300 hover:text-primary cursor-default group">
+                        <span class="material-symbols-outlined text-3xl transform transition-transform group-hover:-translate-y-1">mail</span>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Email Us</h4>
+                        <p class="text-slate-600 dark:text-slate-400 font-light">info@unitedremodelingca.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Our Office</h4>
+                <div class="w-full h-[250px] rounded-2xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 relative group">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=300%20E%20Esplanade%20Dr%20%23%20912,%20Oxnard,%20CA%2093036&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="United Remodeling CA Office Location">
+                    </iframe>
+                    <!-- Protective overlay pointer events auto on hover would be cool, but letting users pan map directly is standard -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Contact Form Box -->
+        <div class="bg-white dark:bg-slate-800 rounded-[2rem] shadow-2xl border border-slate-100 dark:border-slate-700 p-8 md:p-12 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-[#f68712]/5 rounded-bl-full pointer-events-none z-0"></div>
+            
+            <h3 class="text-3xl font-serif font-medium text-slate-900 dark:text-white mb-2 relative z-10">Send a Message</h3>
+            <p class="text-slate-500 text-sm mb-8 relative z-10">We usually reply within 24 hours.</p>
+            
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-5 relative z-10">
+                <input type="hidden" name="access_key" value="93fc022c-1b64-4a54-8f39-272c655675e2">
+                <input type="hidden" name="subject" value="New Website Lead - United Remodeling CA">
+                <input type="hidden" name="from_name" value="United Remodeling Web Form">
+                <input type="checkbox" name="botcheck" id="" style="display: none;">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5 ml-1">First Name</label>
+                        <input type="text" name="First_Name" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl px-5 py-3.5 outline-none focus:border-[#f68712] focus:ring-1 focus:ring-[#f68712]/50 transition-all text-slate-900 dark:text-white" placeholder="John" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5 ml-1">Last Name</label>
+                        <input type="text" name="Last_Name" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl px-5 py-3.5 outline-none focus:border-[#f68712] focus:ring-1 focus:ring-[#f68712]/50 transition-all text-slate-900 dark:text-white" placeholder="Doe">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5 ml-1">Phone Number</label>
+                        <input type="tel" name="Phone" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl px-5 py-3.5 outline-none focus:border-[#f68712] focus:ring-1 focus:ring-[#f68712]/50 transition-all text-slate-900 dark:text-white" placeholder="(555) 123-4567" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5 ml-1">Email Address</label>
+                        <input type="email" name="email" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl px-5 py-3.5 outline-none focus:border-[#f68712] focus:ring-1 focus:ring-[#f68712]/50 transition-all text-slate-900 dark:text-white" placeholder="john@example.com" required>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5 ml-1">Service Needed</label>
+                    <div class="relative">
+                        <select name="Service_Needed" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl px-5 py-3.5 appearance-none outline-none focus:border-[#f68712] focus:ring-1 focus:ring-[#f68712]/50 transition-all text-slate-900 dark:text-white cursor-pointer">
+                            <option value="Landscape Design">Landscape Design</option>
+                            <option value="Concrete Patios">Concrete Patios</option>
+                            <option value="Custom Driveways">Custom Driveways</option>
+                            <option value="Retaining Walls">Retaining Walls</option>
+                            <option value="Turf Installation">Turf Installation</option>
+                            <option value="Hardscaping &amp; Stones">Hardscaping &amp; Stones</option>
+                            <option value="Pergola">Pergola</option>
+                            <option value="Stone Pathways">Stone Pathways</option>
+                            <option value="Landscape Flowers">Landscape Flowers</option>
+                            <option value="Landscape Lighting">Landscape Lighting</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-5 text-slate-500">
+                            <span class="material-symbols-outlined text-[20px]">expand_more</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5 ml-1">Project Details</label>
+                    <textarea name="Project_Details" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-[#f68712] focus:ring-1 focus:ring-[#f68712]/50 transition-all text-slate-900 dark:text-white h-32 resize-none" placeholder="Tell us a little about what you're looking for..."></textarea>
+                </div>
+                <div class="flex items-start gap-3 pt-2 pb-4">
+                    <input type="checkbox" name="Data_Consent" id="data_consent" class="mt-0.5 h-4 w-4 shrink-0 rounded border-slate-300 text-[#f68712] focus:ring-[#f68712] transition-colors cursor-pointer" required>
+                    <label for="data_consent" class="text-[11px] text-slate-500 dark:text-slate-400 leading-tight">
+                        I authorize UNITED REMODELING and/or its dealers to call and/or text me about its products at the number I entered above, using an automatic dialing system, even if I am on a “Do Not Call” list. Msg/data rates may apply. Consent here is not a condition of purchase. Please read our <span class="open-privacy-modal text-[#f68712] cursor-pointer hover:underline transition-all">privacy policy</span> for more information about how we collect and use personal information.
+                    </label>
+                </div>
+                <div class="pt-2">
+                    <button type="submit" id="submit-btn" class="w-full h-14 bg-[#f68712] text-white text-lg font-bold rounded-2xl hover:shadow-[0_0_20px_rgba(246,135,18,0.4)] transition-all hover:-translate-y-1">
+                        Submit Request
+                    </button>
+                </div>
+                <div id="form-result" class="hidden text-center text-sm font-medium mt-4 p-3 rounded-xl bg-slate-50"></div>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-primary/10 py-12 px-6 md:px-20">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<a href="/" class="flex items-center mb-6">
+<img src="/uploads/United%20Remodeling%20Logo.svg" alt="United Remodeling CA Logo" class="h-[60px] w-auto drop-shadow-sm" />
+</a>
+<p class="text-[15px] leading-relaxed text-slate-500 dark:text-slate-400">Energy-Smart Design. <br/>Rock-Solid Craftsmanship.</p>
+</div>
+<div>
+<h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-primary">Quick Links</h4>
+<ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="transition-colors hover:text-[#f68712] font-medium" href="/">Home</a></li>
+<li><a class="hover:text-[#f68712] transition-colors" href="/services.html">Service</a></li>
+<li><a class="hover:text-[#f68712] transition-colors" href="/about.html">About</a></li>
+<li><a class="text-primary transition-colors font-medium" href="/contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-primary">Contact</h4>
+<ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">phone</span> 805-232-5817</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">mail</span> info@unitedremodelingca.com</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-sm mt-0.5">location_on</span> <span class="leading-relaxed">300 E Esplanade Dr # 912<br/>Oxnard, CA 93036-1238</span></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-primary">Follow Us</h4>
+<div class="flex items-center gap-4">
+<a class="size-10 shrink-0 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="https://www.facebook.com/people/Unitedremodelingca/61572554786322/" target="_blank">
+<i class="fa-brands fa-facebook-f text-lg"></i>
+</a>
+<a class="size-10 shrink-0 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="https://www.instagram.com/unitedremodelingca/?hl=en" target="_blank">
+<i class="fa-brands fa-instagram text-lg"></i>
+</a>
+<a class="size-10 shrink-0 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="https://www.yelp.com/biz/united-remodeling-oxnard" target="_blank">
+<i class="fa-brands fa-yelp text-lg"></i>
+</a>
+<a class="size-10 shrink-0 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="https://g.page/r/CWfUcyxh-4PKEAE/review" target="_blank">
+<i class="fa-brands fa-google text-lg"></i>
+</a>
+<a class="size-10 shrink-0 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary transition-all group" href="https://www.bbb.org/us/ca/oxnard/profile/siding-contractors/united-remodeling-ca-inc-1236-92109750" target="_blank" rel="nofollow" title="United Remodeling CA, Inc. BBB Business Review">
+<div class="h-6 w-10 scale-[1.3] bg-primary group-hover:bg-white transition-colors" style="mask: url('/uploads/BBB%20Logo.png') no-repeat center / contain; -webkit-mask: url('/uploads/BBB%20Logo.png') no-repeat center / contain;"></div>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-xs text-slate-500">
+                © 2024 United Remodeling CA. All rights reserved. | License #1149479
+            </div>
+</footer>
+</div>
+
+<!-- Quote Modal -->
+<div id="quote-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-white dark:bg-slate-800 w-full max-w-lg rounded-3xl shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300 m-4 relative z-10">
+        <div class="px-8 py-6 border-b border-slate-100 dark:border-slate-700 flex justify-between items-center">
+            <h3 class="text-2xl font-serif font-medium text-slate-900 dark:text-white">Get a Free Estimate</h3>
+            <button id="close-modal-btn" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors">
+                <span class="material-symbols-outlined text-2xl">close</span>
+            </button>
+        </div>
+        <div class="p-8">
+            <form id="contact-form-modal" action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                <input type="hidden" name="access_key" value="93fc022c-1b64-4a54-8f39-272c655675e2">
+                <input type="hidden" name="subject" value="New Website Lead - United Remodeling CA">
+                <input type="hidden" name="from_name" value="United Remodeling Web Form">
+                <input type="checkbox" name="botcheck" id="" style="display: none;">
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">First Name</label>
+                        <input type="text" name="First_Name" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-[#f68712] transition-colors text-slate-900 dark:text-white" placeholder="John" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Last Name</label>
+                        <input type="text" name="Last_Name" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-[#f68712] transition-colors text-slate-900 dark:text-white" placeholder="Doe">
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Phone Number</label>
+                        <input type="tel" name="Phone" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-[#f68712] transition-colors text-slate-900 dark:text-white" placeholder="(555) 123-4567" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Email Address</label>
+                        <input type="email" name="email" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-[#f68712] transition-colors text-slate-900 dark:text-white" placeholder="john@example.com" required>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Service Needed</label>
+                    <select name="Service_Needed" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-[#f68712] transition-colors text-slate-900 dark:text-white">
+                        <option value="Landscape Design">Landscape Design</option>
+                        <option value="Concrete Patios">Concrete Patios</option>
+                        <option value="Custom Driveways">Custom Driveways</option>
+                        <option value="Retaining Walls">Retaining Walls</option>
+                        <option value="Turf Installation">Turf Installation</option>
+                        <option value="Hardscaping &amp; Stones">Hardscaping &amp; Stones</option>
+                        <option value="Pergola">Pergola</option>
+                        <option value="Stone Pathways">Stone Pathways</option>
+                        <option value="Landscape Flowers">Landscape Flowers</option>
+                        <option value="Landscape Lighting">Landscape Lighting</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Project Details</label>
+                    <textarea name="Project_Details" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-[#f68712] transition-colors text-slate-900 dark:text-white h-24 resize-none" placeholder="Tell us a little about what you're looking for..."></textarea>
+                </div>
+                <div class="flex items-start gap-3 pt-2 pb-4">
+                    <input type="checkbox" name="Data_Consent" id="data_consent_modal" class="mt-0.5 h-4 w-4 shrink-0 rounded border-slate-300 text-[#f68712] focus:ring-[#f68712] transition-colors cursor-pointer" required>
+                    <label for="data_consent_modal" class="text-[11px] text-slate-500 dark:text-slate-400 leading-tight">
+                        I authorize UNITED REMODELING and/or its dealers to call and/or text me about its products at the number I entered above, using an automatic dialing system, even if I am on a “Do Not Call” list. Msg/data rates may apply. Consent here is not a condition of purchase. Please read our <span class="open-privacy-modal text-[#f68712] cursor-pointer hover:underline transition-all">privacy policy</span> for more information about how we collect and use personal information.
+                    </label>
+                </div>
+                <button type="submit" id="submit-btn-modal" class="w-full h-12 bg-[#f68712] text-white font-bold rounded-xl hover:shadow-[0_0_15px_rgba(246,135,18,0.5)] transition-all hover:-translate-y-0.5">
+                    Submit Request
+                </button>
+                <div id="form-result-modal" class="hidden text-center text-sm font-medium mt-2"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Privacy Policy Modal -->
+<div id="privacy-modal" class="fixed inset-0 z-[110] flex items-center justify-center bg-slate-900/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-white dark:bg-slate-800 w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300 m-4 relative z-10 flex flex-col max-h-[90vh]">
+        <div class="px-8 py-6 border-b border-slate-100 dark:border-slate-700 flex justify-between items-center shrink-0">
+            <h3 class="text-2xl font-serif font-medium text-slate-900 dark:text-white">Privacy Policy</h3>
+            <button id="close-privacy-btn" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors">
+                <span class="material-symbols-outlined text-2xl">close</span>
+            </button>
+        </div>
+        <div class="p-8 overflow-y-auto text-sm text-slate-600 dark:text-slate-400 space-y-4">
+            <h4 class="font-bold text-slate-900 dark:text-white text-lg">1. Information We Collect</h4>
+            <p>We collect information that you provide directly to us when filling out our contact forms, including your name, phone number, and project details.</p>
+            <h4 class="font-bold text-slate-900 dark:text-white text-lg mt-6">2. How We Use Your Information</h4>
+            <p>The collected information is solely used to process your service request, provide estimates, and communicate with you regarding your home remodeling or landscaping projects.</p>
+            <h4 class="font-bold text-slate-900 dark:text-white text-lg mt-6">3. Data Security</h4>
+            <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+            <h4 class="font-bold text-slate-900 dark:text-white text-lg mt-6">4. Contact Us</h4>
+            <p>If you have any questions about this Privacy Policy, please contact us at info@unitedremodelingca.com or call 805-232-5817.</p>
+        </div>
+        <div class="px-8 py-6 border-t border-slate-100 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 shrink-0">
+            <button id="accept-privacy-btn" class="w-full h-12 bg-[#f68712] text-white font-bold rounded-xl hover:shadow-[0_0_15px_rgba(246,135,18,0.5)] transition-all hover:-translate-y-0.5">
+                Understood
+            </button>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title> | United Remodeling CA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link rel="stylesheet" href="/style.css"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#82c91e",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102215",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 md:px-20 py-4 bg-white dark:bg-background-dark sticky top-0 z-50">
+<div class="flex items-center py-2 text-slate-900 dark:text-slate-100 min-w-max">
+<a href="/" class="flex items-center">
+    <img src="/uploads/United%20Remodeling%20Logo.svg" alt="United Remodeling CA Logo" class="h-[80px] w-auto drop-shadow-sm" />
+</a>
+</div>
+
+<!-- Centered Menu Text -->
+<div class="hidden lg:flex flex-1 justify-center px-4">
+<nav class="flex items-center gap-6 xl:gap-8">
+<a class="nav-link text-sm font-bold tracking-wide uppercase transition-colors hover:text-primary" href="/">Home</a>
+<a class="nav-link text-sm font-bold tracking-wide uppercase transition-colors hover:text-primary" href="/services.html">Services</a>
+<a class="nav-link text-sm font-bold tracking-wide uppercase transition-colors hover:text-primary" href="/about.html">About</a>
+<a class="nav-link text-sm font-bold tracking-wide uppercase transition-colors hover:text-primary" href="/contact.html">Contact</a>
+</nav>
+</div>
+
+<!-- Social Media, License, Quote Button -->
+<div class="hidden lg:flex items-center justify-end gap-4 xl:gap-6 min-w-max">
+    <div class="flex items-center gap-3 text-slate-500 pr-4 xl:pr-6 border-r border-slate-200 dark:border-slate-700">
+        <a href="#" class="hover:text-primary transition-colors text-lg"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-primary transition-colors text-lg"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="hover:text-primary transition-colors text-lg"><i class="fa-brands fa-yelp"></i></a>
+        <a href="https://www.bbb.org/us/ca/oxnard/profile/siding-contractors/united-remodeling-ca-inc-1236-92109750/#sealclick" target="_blank" rel="nofollow" class="ml-1 hover:opacity-80 transition-opacity">
+            <img src="/uploads/BBB%20Logo.png" style="border: 0;" alt="United Remodeling CA, Inc. BBB Business Review" class="h-5 w-auto object-contain" />
+        </a>
+    </div>
+    
+    <div class="text-right flex flex-col justify-center hidden xl:flex pr-2">
+        <p class="text-[10px] text-slate-500 dark:text-slate-400 font-bold uppercase tracking-widest mb-0.5 leading-none">License #</p>
+        <p class="text-[15px] font-black text-slate-900 dark:text-white leading-none">1149479</p>
+    </div>
+
+    <button class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-slate-900 text-sm font-bold tracking-wide hover:shadow-[0_0_15px_rgba(130,201,30,0.4)] hover:-translate-y-0.5 transition-all">
+        Get a Quote
+    </button>
+</div>
+<div class="lg:hidden text-slate-900 dark:text-slate-100">
+<span class="material-symbols-outlined text-3xl cursor-pointer" id="mobile-menu-open">menu</span>
+</div>
+</header>
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 bg-white dark:bg-background-dark z-[100] flex flex-col hidden lg:hidden">
+    <div class="flex items-center justify-between px-6 py-4 border-b border-primary/10">
+        <div class="flex items-center text-slate-900 dark:text-slate-100">
+            <a href="/" class="flex items-center">
+                <img src="/uploads/United%20Remodeling%20Logo.svg" alt="United Remodeling CA Logo" class="h-12 w-auto" />
+            </a>
+        </div>
+        <span class="material-symbols-outlined text-3xl cursor-pointer text-slate-900 dark:text-slate-100" id="mobile-menu-close">close</span>
+    </div>
+    <div class="flex flex-col p-6 gap-6 text-lg">
+        <a class="nav-link font-medium hover:text-primary transition-colors text-slate-900 dark:text-slate-100" href="/">Home</a>
+        <a class="nav-link font-medium hover:text-primary transition-colors text-slate-900 dark:text-slate-100" href="/services.html">Services</a>
+        <a class="nav-link font-medium hover:text-primary transition-colors text-slate-900 dark:text-slate-100" href="/about.html">About</a>
+        <a class="nav-link font-medium hover:text-primary transition-colors text-slate-900 dark:text-slate-100" href="/contact.html">Contact</a>
+        <button class="mt-4 w-full cursor-pointer items-center justify-center rounded-lg h-12 px-5 bg-primary text-slate-900 text-base font-bold tracking-wide hover:opacity-90 transition-opacity">
+            Get a Quote
+        </button>
+    </div>
+</div>
+<!-- Main Content -->
+
+<main class="flex-1 max-w-7xl mx-auto px-6 py-32 w-full">
+    <h1 class="text-5xl font-black text-slate-900 dark:text-white mb-6 tracking-tight"></h1>
+    <p class="text-xl text-slate-600 dark:text-slate-400 max-w-3xl leading-relaxed"></p>
+</main>
+
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-primary/10 py-12 px-6 md:px-20">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 text-slate-900 dark:text-slate-100 mb-6">
+<span class="material-symbols-outlined text-primary">token</span>
+<span class="font-bold text-lg">United Remodeling CA</span>
+</div>
+<p class="text-sm text-slate-500">Crafting premium outdoor experiences since 2010. Licensed, bonded, and insured in the state of California.</p>
+</div>
+<div>
+<h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-primary">Quick Links</h4>
+<ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary" href="#">Our Process</a></li>
+<li><a class="hover:text-primary" href="#">Portfolio</a></li>
+<li><a class="hover:text-primary" href="#">Reviews</a></li>
+<li><a class="hover:text-primary" href="#">Financing</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-primary">Contact</h4>
+<ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">phone</span> (555) 123-4567</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">mail</span> hello@unitedremodelingca.com</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">location_on</span> Los Angeles, CA</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-primary">Follow Us</h4>
+<div class="flex gap-4">
+<a class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">camera</span>
+</a>
+<a class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+<a class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">distance</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-xs text-slate-500">
+                © 2024 United Remodeling CA. All rights reserved. | License #1234567
+            </div>
+</footer>
+</div>
+<script type="module" src="/main.js"></script>
+</body></html>
