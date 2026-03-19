@@ -209,32 +209,62 @@ document.addEventListener('DOMContentLoaded', () => {
     const lightbox = document.getElementById('gallery-lightbox');
     const lightboxImage = document.getElementById('lightbox-image');
     const lightboxClose = document.getElementById('lightbox-close');
-    const triggers = document.querySelectorAll('.lightbox-trigger');
+    const nextBtn = document.getElementById('lightbox-next');
+    const prevBtn = document.getElementById('lightbox-prev');
+    const triggers = Array.from(document.querySelectorAll('.lightbox-trigger')); // parse as true Array uniquely tracking current positioning
+
+    let currentIndex = 0;
 
     if (lightbox && triggers.length > 0) {
-        // Open Lightbox
-        triggers.forEach(trigger => {
-            trigger.addEventListener('click', (e) => {
-                // Ascend to the parent container and find the target image source
-                const parentBox = trigger.closest('.relative.overflow-hidden');
-                if (parentBox) {
-                    const imgNode = parentBox.querySelector('img');
-                    if (imgNode) {
-                        const targetSrc = imgNode.getAttribute('src');
+        
+        // Dynamic loading function explicitly targeting exact array indices
+        const updateLightboxImage = (index) => {
+            const trigger = triggers[index];
+            const parentBox = trigger.closest('.relative.overflow-hidden');
+            if (parentBox) {
+                const imgNode = parentBox.querySelector('img');
+                if (imgNode) {
+                    // Extract precise SRC native to the grid box
+                    const targetSrc = imgNode.getAttribute('src');
+                    
+                    // Simple snap effect to signify image transformation cleanly
+                    lightboxImage.classList.add('opacity-0');
+                    setTimeout(() => {
                         lightboxImage.setAttribute('src', targetSrc);
-                        
-                        // Fade in logic natively executing scale animation
-                        lightbox.classList.remove('opacity-0', 'pointer-events-none');
-                        setTimeout(() => {
-                            lightboxImage.classList.remove('scale-95');
-                            lightboxImage.classList.add('scale-100');
-                        }, 50);
-                    }
+                        lightboxImage.classList.remove('opacity-0');
+                    }, 150);
                 }
+            }
+        };
+
+        // Initialize array binds
+        triggers.forEach((trigger, index) => {
+            trigger.addEventListener('click', () => {
+                currentIndex = index;
+                updateLightboxImage(currentIndex);
+                
+                // Spawn sequential overlay sequence natively executing fade vectors
+                lightbox.classList.remove('opacity-0', 'pointer-events-none');
+                setTimeout(() => {
+                    lightboxImage.classList.remove('scale-95', 'opacity-0');
+                    lightboxImage.classList.add('scale-100');
+                }, 50);
             });
         });
 
-        // Close logic sequence securely encapsulating transitions
+        const showNext = () => {
+            currentIndex = (currentIndex + 1) % triggers.length;
+            updateLightboxImage(currentIndex);
+        };
+
+        const showPrev = () => {
+            currentIndex = (currentIndex - 1 + triggers.length) % triggers.length;
+            updateLightboxImage(currentIndex);
+        };
+
+        if(nextBtn) nextBtn.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
+        if(prevBtn) prevBtn.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
+
         const closeLightbox = () => {
             lightboxImage.classList.remove('scale-100');
             lightboxImage.classList.add('scale-95');
@@ -246,13 +276,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
         
         lightbox.addEventListener('click', (e) => {
+            // Only trigger close if explicitly clicking the blurry background directly
             if (e.target === lightbox) closeLightbox();
         });
 
+        // Universal keyboard routing hooks
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && !lightbox.classList.contains('pointer-events-none')) {
-                closeLightbox();
-            }
+            if (lightbox.classList.contains('pointer-events-none')) return;
+            
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') showNext();
+            if (e.key === 'ArrowLeft') showPrev();
         });
     }
 });
