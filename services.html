@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-<link rel="stylesheet" href="/style.css"/>
+<link rel="stylesheet" href="./style.css"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -38,42 +38,43 @@
             font-family: 'Public Sans', sans-serif;
         }
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 overflow-x-hidden">
 <div class="relative flex min-h-screen w-full flex-col">
 <!-- Navigation -->
 <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 md:px-20 py-4 bg-white dark:bg-background-dark sticky top-0 z-50">
 <div class="flex items-center py-2 text-slate-900 dark:text-slate-100 min-w-max">
-<a href="/" class="flex items-center">
-    <img src="/uploads/United%20Remodeling%20Logo.svg" alt="United Remodeling CA Logo" class="h-[80px] w-auto drop-shadow-sm" />
+<a href="./index.html" class="flex items-center">
+    <img src="./Uploads/United%20Remodeling%20Logo.svg" alt="United Remodeling CA Logo" class="h-[80px] w-auto drop-shadow-sm" />
 </a>
 </div>
 
 <!-- Centered Menu Text -->
 <div class="hidden lg:flex flex-1 justify-center px-4">
 <nav class="flex items-center gap-6 xl:gap-8">
-<a class="nav-link text-base font-serif font-medium transition-colors hover:text-[#f68712]" href="/">Home</a>
+<a class="nav-link text-base font-serif font-medium transition-colors hover:text-[#f68712]" href="./index.html">Home</a>
 <div class="relative group">
-    <a class="nav-link text-base font-serif font-medium transition-colors text-primary flex items-center gap-1 cursor-pointer" href="/services.html">
+    <a class="nav-link text-base font-serif font-medium transition-colors text-primary flex items-center gap-1 cursor-pointer" href="./services.html">
         Services <span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:rotate-180">expand_more</span>
     </a>
     <div class="absolute top-full left-0 pt-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 z-[100]">
         <div class="bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-slate-100 dark:border-slate-700 overflow-hidden w-64 flex flex-col py-2">
-            <a href="/landscape-design.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Landscape Design</a>
-            <a href="/concrete-patios.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Concrete Patios</a>
-            <a href="/custom-driveways.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Custom Driveways</a>
-            <a href="/retaining-walls.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Retaining Walls</a>
-            <a href="/turf-installation.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Turf Installation</a>
-            <a href="/hardscaping-stones.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Hardscaping & Stones</a>
-            <a href="/wooden-pergolas.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Pergola</a>
-            <a href="/stone-pathways.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Stone Pathways</a>
-            <a href="/landscape-flowers.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Landscape Flowers</a>
-            <a href="/landscape-lighting.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Landscape Lighting</a>
+            <a href="./landscape-design.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Landscape Design</a>
+            <a href="./concrete-patios.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Concrete Patios</a>
+            <a href="./custom-driveways.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Custom Driveways</a>
+            <a href="./retaining-walls.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Retaining Walls</a>
+            <a href="./turf-installation.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Turf Installation</a>
+            <a href="./hardscaping-stones.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Hardscaping & Stones</a>
+            <a href="./wooden-pergolas.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Pergola</a>
+            <a href="./stone-pathways.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Stone Pathways</a>
+            <a href="./landscape-flowers.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Landscape Flowers</a>
+            <a href="./landscape-lighting.html" class="px-5 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-[#f68712] transition-colors">Landscape Lighting</a>
         </div>
     </div>
 </div>
-<a class="nav-link text-base font-serif font-medium transition-colors hover:text-[#f68712]" href="/about.html">About</a>
-<a class="nav-link text-base font-serif font-medium transition-colors hover:text-[#f68712]" href="/contact.html">Contact</a>
+<a class="nav-link text-base font-serif font-medium transition-colors hover:text-[#f68712]" href="./about.html">About</a>
+<a class="nav-link text-base font-serif font-medium transition-colors hover:text-[#f68712]" href="./contact.html">Contact</a>
 </nav>
 </div>
 
@@ -114,35 +115,35 @@
 <div id="mobile-menu" class="fixed inset-0 bg-white dark:bg-background-dark z-[100] flex flex-col hidden lg:hidden">
     <div class="flex items-center justify-between px-6 py-4 border-b border-primary/10">
         <div class="flex items-center text-slate-900 dark:text-slate-100">
-            <a href="/" class="flex items-center">
-                <img src="/uploads/United%20Remodeling%20Logo.svg" alt="United Remodeling CA Logo" class="h-12 w-auto" />
+            <a href="./index.html" class="flex items-center">
+                <img src="./Uploads/United%20Remodeling%20Logo.svg" alt="United Remodeling CA Logo" class="h-12 w-auto" />
             </a>
         </div>
         <span class="material-symbols-outlined text-3xl cursor-pointer text-slate-900 dark:text-slate-100" id="mobile-menu-close">close</span>
     </div>
     <div class="flex flex-col p-6 gap-6">
         <nav class="flex flex-col gap-4">
-            <a class="nav-link text-lg font-serif font-medium hover:text-[#f68712] transition-colors text-slate-900 dark:text-slate-100" href="/">Home</a>
+            <a class="nav-link text-lg font-serif font-medium hover:text-[#f68712] transition-colors text-slate-900 dark:text-slate-100" href="./index.html">Home</a>
             <div class="flex flex-col gap-2">
-    <a class="nav-link text-lg font-serif font-medium transition-colors text-primary flex items-center justify-between" href="/services.html">
+    <a class="nav-link text-lg font-serif font-medium transition-colors text-primary flex items-center justify-between" href="./services.html">
         Services
         <span class="material-symbols-outlined text-lg">chevron_right</span>
     </a>
     <div class="flex flex-col pl-4 gap-3 border-l-2 border-slate-100 dark:border-slate-800 mt-1 mb-2">
-        <a href="/landscape-design.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Landscape Design</a>
-        <a href="/concrete-patios.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Concrete Patios</a>
-        <a href="/custom-driveways.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Custom Driveways</a>
-        <a href="/retaining-walls.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Retaining Walls</a>
-        <a href="/turf-installation.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Turf Installation</a>
-        <a href="/hardscaping-stones.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Hardscaping & Stones</a>
-        <a href="/wooden-pergolas.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Pergola</a>
-        <a href="/stone-pathways.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Stone Pathways</a>
-        <a href="/landscape-flowers.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Landscape Flowers</a>
-        <a href="/landscape-lighting.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Landscape Lighting</a>
+        <a href="./landscape-design.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Landscape Design</a>
+        <a href="./concrete-patios.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Concrete Patios</a>
+        <a href="./custom-driveways.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Custom Driveways</a>
+        <a href="./retaining-walls.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Retaining Walls</a>
+        <a href="./turf-installation.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Turf Installation</a>
+        <a href="./hardscaping-stones.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Hardscaping & Stones</a>
+        <a href="./wooden-pergolas.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Pergola</a>
+        <a href="./stone-pathways.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Stone Pathways</a>
+        <a href="./landscape-flowers.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Landscape Flowers</a>
+        <a href="./landscape-lighting.html" class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-[#f68712] transition-colors">Landscape Lighting</a>
     </div>
 </div>
-            <a class="nav-link text-lg font-serif font-medium hover:text-[#f68712] transition-colors text-slate-900 dark:text-slate-100" href="/about.html">About</a>
-            <a class="nav-link text-lg font-serif font-medium hover:text-[#f68712] transition-colors text-slate-900 dark:text-slate-100" href="/contact.html">Contact</a>
+            <a class="nav-link text-lg font-serif font-medium hover:text-[#f68712] transition-colors text-slate-900 dark:text-slate-100" href="./about.html">About</a>
+            <a class="nav-link text-lg font-serif font-medium hover:text-[#f68712] transition-colors text-slate-900 dark:text-slate-100" href="./contact.html">Contact</a>
         </nav>
         <button class="open-quote-modal mt-4 w-full flex cursor-pointer items-center justify-center rounded-full h-12 px-5 bg-[#f68712] text-white text-base font-bold tracking-wide hover:shadow-[0_0_15px_rgba(246,135,18,0.5)] hover:-translate-y-0.5 transition-all">
             Get a Quote
@@ -174,13 +175,13 @@
                 <!-- 1: Landscape Design -->
                 <div class="group bg-slate-50 dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 w-full flex flex-col border border-slate-100 dark:border-slate-700/50">
                     <div class="relative h-64 w-full overflow-hidden">
-                        <img src="/images/services/landscape_design.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Landscape Design">
+                        <img src="./images/services/landscape_design.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Landscape Design">
                     </div>
                     <div class="p-8 flex flex-col flex-1">
                         <div class="w-8 h-[2px] bg-primary mb-6"></div>
                         <h3 class="text-2xl font-medium text-slate-900 dark:text-white mb-4 tracking-tight font-serif">Landscape Design</h3>
                         <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-8 flex-1">We create custom plans that perfectly blend beauty and function, giving you a clear vision of your new outdoor living space.</p>
-                        <a href="/landscape-design.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
+                        <a href="./landscape-design.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
                             Explore Service <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
                         </a>
                     </div>
@@ -189,13 +190,13 @@
                 <!-- 2: Concrete Patios -->
                 <div class="group bg-slate-50 dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 w-full flex flex-col border border-slate-100 dark:border-slate-700/50">
                     <div class="relative h-64 w-full overflow-hidden">
-                        <img src="/images/services/concrete_patio.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Concrete Patios">
+                        <img src="./images/services/concrete_patio.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Concrete Patios">
                     </div>
                     <div class="p-8 flex flex-col flex-1">
                         <div class="w-8 h-[2px] bg-primary mb-6"></div>
                         <h3 class="text-2xl font-medium text-slate-900 dark:text-white mb-4 tracking-tight font-serif">Concrete Patios</h3>
                         <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-8 flex-1">Custom-poured concrete patios providing extremely durable, perfectly leveled surfaces flawless for outdoor entertainment.</p>
-                        <a href="/concrete-patios.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
+                        <a href="./concrete-patios.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
                             Explore Service <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
                         </a>
                     </div>
@@ -204,13 +205,13 @@
                 <!-- 3: Custom Driveways -->
                 <div class="group bg-slate-50 dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 w-full flex flex-col border border-slate-100 dark:border-slate-700/50">
                     <div class="relative h-64 w-full overflow-hidden">
-                        <img src="/images/services/custom_driveway.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Custom Driveways">
+                        <img src="./images/services/custom_driveway.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Custom Driveways">
                     </div>
                     <div class="p-8 flex flex-col flex-1">
                         <div class="w-8 h-[2px] bg-primary mb-6"></div>
                         <h3 class="text-2xl font-medium text-slate-900 dark:text-white mb-4 tracking-tight font-serif">Custom Driveways</h3>
                         <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-8 flex-1">Upgrade your house's total curb appeal with a stunningly beautiful, custom driveway that welcomes you home every day.</p>
-                        <a href="/custom-driveways.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
+                        <a href="./custom-driveways.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
                             Explore Service <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
                         </a>
                     </div>
@@ -219,13 +220,13 @@
                 <!-- 4: Retaining Walls -->
                 <div class="group bg-slate-50 dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 w-full flex flex-col border border-slate-100 dark:border-slate-700/50">
                     <div class="relative h-64 w-full overflow-hidden">
-                        <img src="/images/services/retaining_wall.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Retaining Walls">
+                        <img src="./images/services/retaining_wall.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Retaining Walls">
                     </div>
                     <div class="p-8 flex flex-col flex-1">
                         <div class="w-8 h-[2px] bg-primary mb-6"></div>
                         <h3 class="text-2xl font-medium text-slate-900 dark:text-white mb-4 tracking-tight font-serif">Retaining Walls</h3>
                         <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-8 flex-1">We construct durable and highly attractive retaining walls that prevent soil erosion while adding new structure to your yard.</p>
-                        <a href="/retaining-walls.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
+                        <a href="./retaining-walls.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
                             Explore Service <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
                         </a>
                     </div>
@@ -234,13 +235,13 @@
                 <!-- 5: Turf Installation -->
                 <div class="group bg-slate-50 dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 w-full flex flex-col border border-slate-100 dark:border-slate-700/50">
                     <div class="relative h-64 w-full overflow-hidden">
-                        <img src="/images/services/turf_installation.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Turf Installation">
+                        <img src="./images/services/turf_installation.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Turf Installation">
                     </div>
                     <div class="p-8 flex flex-col flex-1">
                         <div class="w-8 h-[2px] bg-primary mb-6"></div>
                         <h3 class="text-2xl font-medium text-slate-900 dark:text-white mb-4 tracking-tight font-serif">Turf Installation</h3>
                         <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-8 flex-1">Enjoy a perfectly green, low-maintenance lawn all year round with our premium artificial turf solutions built for any family.</p>
-                        <a href="/turf-installation.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
+                        <a href="./turf-installation.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
                             Explore Service <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
                         </a>
                     </div>
@@ -249,13 +250,13 @@
                 <!-- 6: Hardscaping & Stones -->
                 <div class="group bg-slate-50 dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 w-full flex flex-col border border-slate-100 dark:border-slate-700/50">
                     <div class="relative h-64 w-full overflow-hidden">
-                        <img src="/images/services/hardscaping.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Hardscaping & Stones">
+                        <img src="./images/services/hardscaping.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Hardscaping & Stones">
                     </div>
                     <div class="p-8 flex flex-col flex-1">
                         <div class="w-8 h-[2px] bg-primary mb-6"></div>
                         <h3 class="text-2xl font-medium text-slate-900 dark:text-white mb-4 tracking-tight font-serif">Hardscaping & Stones</h3>
                         <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-8 flex-1">Transform your backyard into a lasting living space using high-quality stones, pavers, and premium materials built to endure.</p>
-                        <a href="/hardscaping-stones.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
+                        <a href="./hardscaping-stones.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
                             Explore Service <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
                         </a>
                     </div>
@@ -264,13 +265,13 @@
                 <!-- 7: Wooden Pergolas -->
                 <div class="group bg-slate-50 dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 w-full flex flex-col border border-slate-100 dark:border-slate-700/50">
                     <div class="relative h-64 w-full overflow-hidden">
-                        <img src="/images/services/pergola_installation.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Pergola">
+                        <img src="./images/services/pergola_installation.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Pergola">
                     </div>
                     <div class="p-8 flex flex-col flex-1">
                         <div class="w-8 h-[2px] bg-primary mb-6"></div>
                         <h3 class="text-2xl font-medium text-slate-900 dark:text-white mb-4 tracking-tight font-serif">Pergola</h3>
                         <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-8 flex-1">Enhance your backyard living space with a stunning, custom-built pergola providing perfect shade and fantastic visual appeal.</p>
-                        <a href="/wooden-pergolas.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
+                        <a href="./wooden-pergolas.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
                             Explore Service <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
                         </a>
                     </div>
@@ -279,13 +280,13 @@
                 <!-- 8: Stone Pathways -->
                 <div class="group bg-slate-50 dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 w-full flex flex-col border border-slate-100 dark:border-slate-700/50">
                     <div class="relative h-64 w-full overflow-hidden">
-                        <img src="/images/services/walkways.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Stone Pathways">
+                        <img src="./images/services/walkways.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Stone Pathways">
                     </div>
                     <div class="p-8 flex flex-col flex-1">
                         <div class="w-8 h-[2px] bg-primary mb-6"></div>
                         <h3 class="text-2xl font-medium text-slate-900 dark:text-white mb-4 tracking-tight font-serif">Stone Pathways</h3>
                         <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-8 flex-1">Connect your outdoor spaces beautifully with thoughtfully designed stone paths that add both supreme safety and rustic grace.</p>
-                        <a href="/stone-pathways.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
+                        <a href="./stone-pathways.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
                             Explore Service <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
                         </a>
                     </div>
@@ -294,13 +295,13 @@
                 <!-- 9: Landscape Flowers -->
                 <div class="group bg-slate-50 dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 w-full flex flex-col border border-slate-100 dark:border-slate-700/50">
                     <div class="relative h-64 w-full overflow-hidden">
-                        <img src="/images/services/landscape_flowers.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Landscape Flowers">
+                        <img src="./images/services/landscape_flowers.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Landscape Flowers">
                     </div>
                     <div class="p-8 flex flex-col flex-1">
                         <div class="w-8 h-[2px] bg-primary mb-6"></div>
                         <h3 class="text-2xl font-medium text-slate-900 dark:text-white mb-4 tracking-tight font-serif">Landscape Flowers</h3>
                         <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-8 flex-1">Our expert team installs beautiful trees, shrubs, and flowers to bring your whole yard to life with stunning natural beauty.</p>
-                        <a href="/landscape-flowers.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
+                        <a href="./landscape-flowers.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
                             Explore Service <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
                         </a>
                     </div>
@@ -309,13 +310,13 @@
                 <!-- 10: Landscape Lighting -->
                 <div class="group bg-slate-50 dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 w-full flex flex-col border border-slate-100 dark:border-slate-700/50">
                     <div class="relative h-64 w-full overflow-hidden">
-                        <img src="/images/services/landscape_lighting.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Landscape Lighting">
+                        <img src="./images/services/landscape_lighting.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Landscape Lighting">
                     </div>
                     <div class="p-8 flex flex-col flex-1">
                         <div class="w-8 h-[2px] bg-primary mb-6"></div>
                         <h3 class="text-2xl font-medium text-slate-900 dark:text-white mb-4 tracking-tight font-serif">Landscape Lighting</h3>
                         <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-8 flex-1">Illuminate your gorgeous property at night with elegant outdoor lighting that adds safety and creates a cozy atmosphere.</p>
-                        <a href="/landscape-lighting.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
+                        <a href="./landscape-lighting.html" class="inline-flex items-center gap-2 text-[#f68712] font-bold hover:text-primary transition-colors text-sm uppercase tracking-wide">
                             Explore Service <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
                         </a>
                     </div>
@@ -329,17 +330,17 @@
 <footer class="bg-white dark:bg-background-dark border-t border-primary/10 py-12 px-6 md:px-20">
 <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
 <div class="col-span-1 md:col-span-1">
-<a href="/" class="flex items-center mb-6">
-<img src="/uploads/United%20Remodeling%20Logo.svg" alt="United Remodeling CA Logo" class="h-[60px] w-auto drop-shadow-sm" />
+<a href="./index.html" class="flex items-center mb-6">
+<img src="./Uploads/United%20Remodeling%20Logo.svg" alt="United Remodeling CA Logo" class="h-[60px] w-auto drop-shadow-sm" />
 </a>
 <p class="text-[15px] leading-relaxed text-slate-500 dark:text-slate-400">Energy-Smart Design. <br/>Rock-Solid Craftsmanship.</p>
 </div>
 <div>
 <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-primary">Quick Links</h4>
 <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
-<li><a class="transition-colors text-primary font-medium" href="/">Home</a></li>
-<li><a class="hover:text-[#f68712] transition-colors" href="/services.html">Service</a></li>
-<li><a class="hover:text-[#f68712] transition-colors" href="/about.html">About</a></li>
+<li><a class="transition-colors text-primary font-medium" href="./index.html">Home</a></li>
+<li><a class="hover:text-[#f68712] transition-colors" href="./services.html">Service</a></li>
+<li><a class="hover:text-[#f68712] transition-colors" href="./about.html">About</a></li>
 </ul>
 </div>
 <div>
@@ -475,5 +476,5 @@
     </div>
 </div>
 
-<script type="module" src="/main.js"></script>
+<script type="module" src="./main.js"></script>
 </body></html>
