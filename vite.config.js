@@ -13,6 +13,7 @@ files.forEach(file => {
 });
 
 export default defineConfig({
+  base: './',
   build: {
     rollupOptions: {
       input: buildInput,
