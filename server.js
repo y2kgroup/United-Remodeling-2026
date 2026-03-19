@@ -8,12 +8,12 @@ const __dirname = dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve static files from the Vite build directory
-app.use(express.static(join(__dirname, 'dist')));
+// Serve static files from the root directory since the files are perfectly native HTML now
+app.use(express.static(__dirname));
 
-// Send all requests to index.html
+// Send all requests to index.html to support direct path routing
 app.get('*', (req, res) => {
-  res.sendFile(join(__dirname, 'dist', 'index.html'));
+  res.sendFile(join(__dirname, 'index.html'));
 });
 
 app.listen(PORT, () => {
